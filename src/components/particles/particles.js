@@ -3,14 +3,10 @@ import Particles from "react-tsparticles";
 
 const particles = () => {
 	const particlesInit = (main) => {
-		console.log(main);
-
 		// you can initialize the tsParticles instance (main) here, adding custom shapes or presets
 	};
 
-	const particlesLoaded = (container) => {
-		console.log(container);
-	};
+	const particlesLoaded = (container) => {};
 	return (
 		<Particles
 			class="particles"
@@ -22,7 +18,7 @@ const particles = () => {
 				interactivity: {
 					events: {
 						onClick: {
-							enable: true,
+							enable: false,
 							mode: "push",
 						},
 						onHover: {
@@ -74,7 +70,7 @@ const particles = () => {
 							enable: true,
 							area: 800,
 						},
-						value: 610,
+						value: 50,
 					},
 					opacity: {
 						value: 0.5,
